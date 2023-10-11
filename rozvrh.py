@@ -83,13 +83,13 @@ for row in sheet.iter_rows(min_row=2, values_only=True):
     cas_do = datetime.strptime(cas_do_str, '%H:%M')
 
 
-    # Vytvoření události v ICS formátu
+    # Vytvoření události v ICS formátu s časy
 
     ics_file.write("BEGIN:VEVENT\n")
 
-    ics_file.write(f"DTSTART;VALUE=DATE-TIME:{datum.strftime('%Y%m%dT%H%M%S')}\n")
+    ics_file.write(f"DTSTART;VALUE=DATE-TIME:{datum.strftime('%Y%m%d')}T{cas_od.strftime('%H%M%S')}\n")
 
-    ics_file.write(f"DTEND;VALUE=DATE-TIME:{datum.strftime('%Y%m%dT%H%M%S')}\n")
+    ics_file.write(f"DTEND;VALUE=DATE-TIME:{datum.strftime('%Y%m%d')}T{cas_do.strftime('%H%M%S')}\n")
 
     ics_file.write(f"SUMMARY:{nazev_predmetu}\n")
 
