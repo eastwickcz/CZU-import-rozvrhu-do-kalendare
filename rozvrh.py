@@ -64,7 +64,7 @@ for row in sheet.iter_rows(min_row=2, values_only=True):
 
     nazev_predmetu = row[3]
 
-    popis = f"{row[4]}\n{row[5]}\n{row[6]}"
+    popis = f"{row[4]}, místo:{row[5]}, vyučující: {row[6]}"
 
 
     # Převod dvoupísmenného zkratky na třípísmennou pro den v týdnu
