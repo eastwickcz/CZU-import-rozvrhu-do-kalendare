@@ -3,6 +3,8 @@
 
 Tento skript vytvoří kalendářní soubor ze školního rozvrhu, který lze snadno importovat do kalendářových aplikací.
 
+Soubory `export.xlsx` a `rozvrh.ics` jsou pouze příkladové soubory, jak má vypadat vstupní soubor `export.xlsx` a výsledný `rozvrh.ics`
+
 
 ## Jak to funguje
 
@@ -31,7 +33,7 @@ Pro úspěšné použití tohoto skriptu je třeba mít následující:
 4. Spusťte skript pomocí následujícího příkazu:
 
 
-   python3 create_calendar.py
+   python3 rozvrh.py
 
 Skript vytvoří soubor s názvem rozvrh.ics, který obsahuje kalendářní události z vašeho rozvrhu.
 
